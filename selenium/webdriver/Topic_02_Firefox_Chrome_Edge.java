@@ -31,4 +31,11 @@ public class Topic_02_Firefox_Chrome_Edge {
 		driver.get("https://www.facebook.com/");
 		driver.quit();
 	}
+	
+	@Test
+	public void TC_04_Run_On_Firefox() {
+		driver = new FirefoxDriver();
+		driver.get("https://www.youtube.com/");
+		driver.quit();
+	}
 }
