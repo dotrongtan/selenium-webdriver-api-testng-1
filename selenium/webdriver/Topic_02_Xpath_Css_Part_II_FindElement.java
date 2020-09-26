@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -119,4 +120,11 @@ public class Topic_02_Xpath_Css_Part_II_FindElement {
 //		driver.findElement(By.xpath("//div[@class='skip-content skip-active']//a[text()='Log Out']")).click();
 		
 	}
+	
+	@AfterClass
+	public void afterClass() {
+		driver.quit();
+	}
+	
+	
 }
